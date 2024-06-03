@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="420.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aitest.SetUpController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label fx:id="welcomeText" alignment="CENTER" contentDisplay="TOP" minWidth="-Infinity" prefHeight="36.0" prefWidth="288.0" text="Test on a choosing topic" textFill="#008aa9" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label prefHeight="44.0" prefWidth="342.0" text="Write down the topic you would like to have a test" textAlignment="CENTER" textFill="#00769e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" prefHeight="36.0" prefWidth="529.0" promptText="your topic" />
+      <Label prefHeight="20.0" prefWidth="229.0" text="Choose the difficulty level" textFill="#0482a4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="difficultyLevel" prefHeight="25.0" prefWidth="157.0" />
+      <Button fx:id="generateTest" alignment="CENTER" contentDisplay="TOP" prefHeight="140.0" prefWidth="132.0" text="Genarate test" textAlignment="JUSTIFY" textFill="#0082b5" />
+   </children>
+</VBox>
