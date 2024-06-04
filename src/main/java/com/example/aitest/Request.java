@@ -15,7 +15,7 @@ public class Request
     @SneakyThrows
     public Response makeRequest(String topic, String difficulty)
     {
-        final String apiKey = "AIzaSyDoIn_5Bo11HSHYocuevQy3TDUIyj76i24";
+        final String apiKey = "";
 
         HttpClient client = HttpClient.newBuilder().build();
         String question =
