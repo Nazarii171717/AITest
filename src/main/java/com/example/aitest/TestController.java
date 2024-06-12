@@ -99,7 +99,7 @@ public class TestController {
 
         goBack.setOnAction(e -> {
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("window1.fxml")); // Replace with the path to your FXML file
+                Parent root = FXMLLoader.load(getClass().getResource("window1.fxml")); 
                 Scene scene = new Scene(root);
                 Stage stage = (Stage) goBack.getScene().getWindow();
                 stage.setScene(scene);
